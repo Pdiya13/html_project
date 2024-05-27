@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .header-file{
+        display: flex;
+        justify-content: flex-start;
+        border:double;
+        padding: 15px;
+    }
+</style>
+
+<body>
+
+    <header class="header-file">
+        <div>Home</div>
+        <div>Startup</div>
+        <div>Academics</div>
+    </header>
+    <br>
+
+    <fieldset>
+        <legend>Fill up the Form: </legend>
+    <form action="submit.html" method="post">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Enter your Email: </label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="q1">Enter your preference: </label>
+        <input type="radio" id="q1" name="group1">Maths
+        <input type="radio" id="q1" name="group1">pps
+        <input type="radio" id="q1" name="group1">Physics
+        <br>
+
+        <label for="q2">select your hobbies: </label>
+        <input type="checkbox" id="q2" name="group2">Sports
+        <input type="checkbox" id="q2" name="group2">Dancing
+        <input type="checkbox" id="q2" name="group2">Singing
+        <br>
+
+        <label for="q3">Select city: </label>
+        <select>
+            <option id="q3" name="q3">Select options</option>
+            <option id="q3" name="q3">London</option>
+            <option id="q3" name="q3">Dubai</option>
+            <option id="q3" name="q3">Canada</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="reset">
+
+
+    </form>
+</fieldset>
+</body>
+</html>

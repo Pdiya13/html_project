@@ -1,0 +1,380 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100vw;
+}
+
+.main{
+    background-image: url("bg5.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover; 
+    background-position: center top;
+    width:100vw;
+}
+.c1{
+    font-size: xx-large;
+    text-align: center;
+    padding:50px;
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.c1 h1{
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 3px;
+}
+
+.mainimg{
+    padding: 40px;
+}
+#image{
+   
+    width: 300px;
+    height:400px;
+    border: 15px solid rgba(1, 1, 1, 0);
+    outline: 0 px solid  #de4f6231; 
+  
+    transition: outline 0.5s ease-out;
+    
+}
+.mainspace:hover{
+    #image{
+    outline:5px solid black;
+    
+    }
+    
+}
+
+
+
+
+.head{
+    width:100vw;
+}
+
+
+.head ul{ 
+    margin: 0; 
+    display: flex;
+    width:100vw;
+     list-style: none; 
+     padding: 0; 
+     background: #3c4658; 
+     align-items: center; 
+     flex-direction: row; 
+     justify-content: center; 
+}
+
+.head li{
+     /* height: 70px;  */
+    width:100vw;
+     border-right: 1px solid #bbb; 
+    height: 70px; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center;
+     /* flex:1;   */
+}
+
+.head li a {
+    display: flex;
+    color: white;
+    font-size: 17px;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.head ul li:hover {
+
+    background-image: url(bg5.jpg);
+    font-size: 22px;
+    a{
+        color: black;
+        font-weight:800;
+        font-family: 'Popins';
+        font-size: 25px;
+        transform: scale(1.1);
+        align-items: center;
+    }
+    
+}
+
+
+
+
+.mainspace {
+    width: auto;
+    height:auto;
+    padding:20px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.text {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Choose a suitable font */
+    font-size: 24px; 
+    color: rgb(10, 10, 10); 
+    font-weight: bold; 
+    line-height: 1.5; 
+    width: auto;
+    height: auto;
+    margin-left: 89px;
+}
+
+.text > p{
+    padding: 26px;
+}
+footer {
+    background-color: #3c4658;
+    /* color: rgb(17, 2, 2); White text color */
+    color: white;
+    width:auto;
+    padding:40px;
+}
+
+.aa{
+    display: inline;
+    margin-right: 29px;
+}
+
+.social-icons a {
+    display: f;
+    margin-bottom: 10px; 
+    color: white;
+}
+
+.social-icons img {
+    width: 50px; 
+    height: auto; 
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.right-side {
+    text-align: right;
+}
+
+.right-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-side ul li {
+    display: inline-flex;
+}
+
+.right-side ul li a {
+    color: white; 
+    text-decoration: none; 
+    text-align: right;
+}
+
+.right-side ul li:hover {
+    text-decoration: none; 
+    
+    a{
+        color: white;
+        font-weight:800;
+        font-size: 20px;
+        transform: scale(1.1);
+        align-items: center;
+    }
+}
+
+.right-side p {
+    font-size: xx-large;
+}
+
+.left-side p {
+    font-size: xx-large;
+}
+
+.right {
+    align-content: right;
+    font-size: larger;
+    padding: 10px;
+}
+
+
+.c2 {
+    border: 1px solid #3c4658; 
+    border-radius: 10px;
+    border-style: double;
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+.c3 {
+    border: 1px solid #3c4658;
+    border-radius: 10px;
+    border-style: double;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.a1 {
+    border-radius: 0px;
+    border-style: double;
+    border-color:solid black;
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: auto;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.hdiv {
+    font-size: large;
+}
+
+.fp{
+    padding-top:40px;
+    text-align: center;
+}
+
+.edq{
+    align-items: center;
+    text-align: center;
+    margin-top:40px;
+}
+
+.maintab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+       
+.tab {
+    width: fit-content; 
+    border-collapse: collapse; 
+}
+
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+
+th {
+    padding: 20px; 
+    text-align: left; 
+    background-color: #f2f2f2; 
+}
+
+
+td {
+    padding: 18px; 
+    text-align: left; 
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    .mainspace{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-text{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap:50px;
+    }
+    .right-side ul{
+        text-align: center;
+    }
+    .tr1 , .tr2,.tr3,.tr4{
+        display:flex;
+        flex-direction: column;
+       td{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+    }
+    
+
+   
+}
+@media screen and (max-width:600px)
+{
+    .mainspace{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .head ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        padding: 0;
+      }
+      .head li {
+        width:auto;
+        margin: 10px;
+        text-align: center;
+        
+      }
+      .head ul li:hover {
+        background-image: linear-gradient(to right,#D6E3FF, #dcd6d5);
+        font-size: 22px;
+        a{
+            color: black;
+            font-weight:800;
+            font-family: 'Popins';
+            
+            transform: scale(1.1);
+            align-items: center;
+        }
+        
+    }
+}

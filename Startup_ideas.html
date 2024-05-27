@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="project.css">
+
+  <style>
+    .sh1 {
+      font-size: 40px;
+      /* font-family: 'Courier New'; */
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    
+
+    .left-column,
+    .right-column,
+    .middle-column {
+      margin-top: 40px;
+      margin-bottom: 80px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      font-size: larger;
+      gap: 77px;
+    }
+
+    .slogan {
+      background-color: #d49d8d81;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+      height: 200px;
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .row1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 32px;
+      
+    }
+
+    .row2 {
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .slogan:hover {
+      transform: translateY(-5px);
+    }
+
+    #product {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 33px;
+    }
+
+    #product .container {
+      display: flex;
+      flex-wrap: wrap;
+    flex-direction: row;
+      justify-content: space-between;
+    }
+    @media screen and (max-width:900px)
+    {
+      #product .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .row1,.row2{
+        flex-direction: column;
+      }
+
+      .rowa{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    #product>h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    #product .main {
+      width: 33%;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    #product .pimg img {
+      width: 100%;
+      height: auto;
+    }
+
+    #product .pcontent {
+      padding: 10px;
+    }
+
+    .slogan h1 {
+      font-size: 18px;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .slogan p {
+      font-size: 16px;
+      color: black;
+      line-height: 1.5;
+    }
+
+    .content {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 34px;
+      flex: 1;
+    }
+
+    .content a {
+      padding: 10px;
+      border-bottom: 2px solid black;
+      border-top: 1px solid black;
+      border-radius: 35px;
+      color: black;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .middle-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    
+
+    .ecm1 h1,
+    .ac1 h1 {
+      font-size: 35px;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .ecm1 h2 {
+      font-size: 25px;
+    }
+
+    .ecm1,
+    .ac1 {
+      width: 45%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .ec1,
+    .ec2,
+    .ec3 {
+      width: 100%;
+
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .ec1 h3,
+    .ec2 h3,
+    .ec3 h3 {
+      color: black;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ec1 p,
+    .ec2 p,
+    .ec3 p {
+      color: black;
+      font-size: 15px;
+    }
+
+    .ec1:hover,
+    .ec2:hover,
+    .ec3:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+
+    .rowa {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#marketing{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+   
+    .navbar-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+
+    .logo {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+
+      width: 90px;
+      height: 90px;
+    }
+
+    #product{
+      width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    #product .main {
+      width: 30%;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+      cursor: grab;
+    }
+
+    #product .main:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      /* Add box-shadow on hover for depth effect */
+    }
+
+    #problem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #problem>h2 {
+      text-align: center;
+      margin: 36px 1px;
+      font-size: xx-large;
+      background: #DFC5C5;
+
+      /* background: transparent; */
+      padding: 11px;
+      width: 329px;
+      height: auto;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="c1">
+      <h1>STARTUP IDEAS</h1>
+    </div>
+
+    <header class="head">
+      <ul>
+        <li><a href="home.html">
+            <span>Home</span>
+          </a></li>
+        <li><a href="Academics.html">
+            <span>Academic</span>
+          </a></li>
+        <li><a href="hobby.html">
+            <span>Hobbies</span>
+          </a></li>
+                 <li><a href="Achievements.html">
+            <span>Achievements</span>
+          </a></li>
+        <li><a href="Startup_ideas.html">
+            <span>Startup Ideas</span></a></li>
+        <li><a href="Slogan_spectrum.html">
+            <span>Slogan Spectrum</span></a></li>
+      </ul>
+    </header>
+    <br>
+    <div class="c1">
+      <h1 style="font-size:22px">SkyIntel Center</h1>
+      <!-- <h1 class="sh1" align="center">SkyIntel CloudFly</h1> -->
+
+    </div>
+    <video src="dronevideo.mp4" controls>Placeholder Video</video>
+    <br>
+    <br>
+    
+
+    <section id="problem">
+      <div class="c1">
+        <h1 style="font-size:22px">Problem Resolution</h1>
+      </div>
+      
+      <div class="container">
+        <div class="row1">
+          <div class="slogan">
+            <h1>Battery Issues</h1>
+            <div>
+              Upgrade to higher capacity batteries to extend flight time.
+              Implement real-time battery monitoring systems to track
+              remaining charge and provide timely warnings.Design drones with swappable
+              batteries for quick and seamless replacements during operations.
+
+            </div>
+          </div>
+          <div class="slogan">
+            <h1>Propeller Damage</h1>
+            <div>
+              Implementing protective measures such as propeller guards,
+              practicing safe flying techniques, and regular maintenance
+              can help mitigate the risk of propeller damage and ensure
+              optimal performance of the drone.
+            </div>
+          </div>
+          <div class="slogan">
+            <h1>Camera Malfunction</h1>
+            <div>
+              Involve repairing or replacing faulty camera components,
+              updating software, conducting maintenance checks, or
+              adjusting flight operations to minimize potential interferences.
+            </div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="slogan">
+            <h1>Clouding</h1>
+            <div>
+              Improving the drone's onboard processing capabilities and
+              integrating real-time data analysis algorithms can help
+              mitigate the impact of clouding on drone performance.
+            </div>
+          </div>
+          <div class="slogan">
+            <h1>Automatic landing</h1>
+            <div>
+              Automatic landing systems utilize sensors, GPS, and onboard
+              algorithms to calculate the drone's position and altitude,
+              enabling it to land precisely at a predefined location.
+            </div>
+          </div>
+          <div class="slogan">
+            <h1>Lack of affordable solutions for agricultural applications</h1>
+            <div>
+              Involves developing and deploying affordable drone solutions
+              specifically designed to meet the needs of farmers, enabling
+              them to leverage drone technology for improved crop management
+              and yield optimization.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="c1">
+        <h1 style="font-size:22px">Product Description:</h1>
+      </div>
+     
+      <div class="container">
+        <div class="main">
+          <div class="pimg">
+            <img src="battery.jpg" alt="Placeholder Image 1" style="width: 200px; height: 200px;">
+          </div>
+          <div class="pcontent">Battery:
+            D12000iE Multifunctional Inverter Generator[18]
+            15% overall fuel savings[15]
+            1,500 W AC output
+            9-min ultra-fast charging[7]
+            1.5 m long charging cable
+          </div>
+        </div>
+        <div class="main">
+          <div class="pimg">
+            <img src="frame.jpg" alt="Placeholder Image 1" style="width: 200px; height: 200px;">
+          </div>
+          <div class="pcontent">
+            Drone freme :
+            An FPV drone frame is the structural backbone of a drone. It is the skeleton on which all other components
+            are mounted, and provides protection to all the electronics inside the drone.
+
+            Mattel hardware: 4x Arms
+          </div>
+        </div>
+        <div class="main">
+          <div class="pimg">
+            <img src="flightcontroller.jpg" alt="Placeholder Image 1" style="width: 200px; height: 200px;">
+          </div>
+          <div class="pcontent">The flight controller:
+            It is the brain of the drone, which controls the motors and ESCs in the drone. It is an electronics board in
+            which sensors,
+            processors, communication protocols, and transmitter pins are installed. A flight controller controls every
+            aspect of the drone.
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main">
+          <div class="pimg">
+            <img src="controller.jpg" alt="Placeholder Image 1" style="width: 200px; height: 200px;">
+          </div>
+          <div class="pcontent">Controller :
+            the primary interface between the pilot and the drone, allowing for seamless control over its flight and
+            movements.
+          </div>
+        </div>
+        <div class="main">
+          <div class="pimg">
+            <img src="camera.jpg" alt="Placeholder Image 1" style="width: 200px; height: 200px;">
+          </div>
+          <div class="pcontent">drone camera:
+
+            A drone camera is a specialized camera mounted on a drone —also known as a known as an Unmanned Aerial
+            Vehicle (UAV)—, designed to capture high-quality images and video from the sky.
+          </div>
+        </div>
+        <div class="main">
+          <div class="pimg">
+            <img src="esc.jpg" alt="Placeholder Image 1" style="width: 200px; height: 200px;">
+          </div>
+          <div class="pcontent">ESC, or Electronic Speed Controller:
+            is a device that allows a drone's flight controller to adjust the drone's electric motors' speed.
+            The ESC connects the battery, motor, and flight controller, and then sends timed electric signals to the
+            motor to control its rotation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="marketing" class="marketing">
+      <div class="c1">
+        <h1 style="font-size:22px">Pricing Plans</h1>
+      </div>
+     
+      <div class="rowa">
+        <div class="ecm1">
+
+          <div class="ec1">
+
+            <h2>100+</h2>
+            <h3>Event Hosting with Drones</h3>
+            <p>Whether it's a product launch, industry conference, or community gathering, drones can add an exciting
+              and memorable element to any event.</p>
+
+          </div>
+          <div class="ec2">
+            <h2>200+</h2>
+            <h3>Influencer Marketing</h3>
+            <p>Influencer marketing is a powerful tool for reaching and engaging audiences in today's digital landscape.
+            </p>
+
+          </div>
+          <div class="ec3">
+            <h2>250+</h2>
+            <h3>Forging Alliances</h3>
+            <p>Partnerships play a crucial role in our growth strategy. By forging alliances with complementary
+              businesses and organizations, we can expand our reach and access new markets more effectively.</p>
+
+          </div>
+        </div>
+        <div class="ac1">
+
+          <div class="ec1">
+            <h3>Why choose Us</h3>
+            <p>Our marketing strategies are designed to reach new heights and capture the attention of our target
+              audience. We will leverage a multi-channel approach, incorporating digital marketing tactics such as
+              social media adertising, content marketing, and search engine optimization,
+              as well as traditional methods like print advertising and direct mail campaigns</p>
+            <p>Partnerships play a crucial role in our growth strategy. By forging alliances with complementary
+              businesses and organizations, we can expand our reach and access new markets more effectively.</p>
+            <p>We will seek partnerships with companies in industries such as [list of industries], where our drones can
+              add value. These partnerships may involve co-marketing initiatives, joint product development efforts, or
+              collaborative events aimed at showcasing the synergy between our respective technologies.</p>
+            <p>Hosting events presents a unique opportunity to showcase our drones in action and engage with potential
+              customers firsthand. Whether it's a product launch, industry conference, or community gathering, drones
+              can add an exciting and memorable element to any event.
+            </p>
+            <p>
+              We will organize drone demonstrations and interactive experiences to highlight the capabilities and
+              versatility of our technology. From precision agriculture to aerial photography, attendees will witness
+              firsthand how our drones can revolutionize their respective fields.
+
+            </p>
+            <p>These influencers will create compelling content showcasing our drones in action, sharing their
+              experiences and insights with their followers. By harnessing their reach and influence, we can tap into
+              new audiences and foster authentic connections with potential customers.</p>
+            <p>Additionally, we will focus on creating compelling visual content showcasing the capabilities of our
+              drones. Stunning aerial footage and captivating imagery will not only highlight the practical applications
+              of our technology but also spark the imagination of potential customers</p>
+          </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="funding" class="funding">
+      <div class="maincontainer">
+        <div class="im1">
+          <img src="invest1.jpg">
+
+        </div>
+        <div class="im1">
+          <img src="invest2.jpg">
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="footer-text">
+
+        <div class="left-side">
+          <p>Connect with Us:</p>
+
+          <div class="social-icons">
+            <a class="aa" href="#"><img src="face.jpeg" alt="Facebook"></a>
+            <a class="aa" href="#"><img src="insta.avif" alt="Instagram"></a>
+            <a class="aa" href="#"><img src="linked.jpeg" alt="Linkedin"></a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <p>Additional Links:</p>
+          <ul>
+            <li><a class="right" href="feedback.html">Feedback</a></li>
+            <li><a class="right" href="contact.html">Contact Me</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+      <p class="fp" align="center" style="font-size:30px">© 2024 Your Website. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
